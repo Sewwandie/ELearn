@@ -1,4 +1,4 @@
-export class User {
+export class Quizs {
     _id: number;
     uname:string;
     Questions:[];
