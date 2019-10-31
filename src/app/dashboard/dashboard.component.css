@@ -16,7 +16,7 @@ header{
 
 
 #userImage{
-    background-image: url(src\assets\Images\Home\userimg.png);
+    background-image: url(src\assets\Images\Home\elearningHeader.jpg);
     width: 350px;
     height:auto;
 }
@@ -47,8 +47,9 @@ article{
 #content{
     padding: 25px;
     background-image: linear-gradient(to right,#8E2DE2,#4A00E0);
+    margin-bottom: 10px;
     border-radius: 10px;
-    box-shadow: 10px,10px,black;
+    box-shadow: 10px,10px,10px,black;
     display:block;
 }
 
