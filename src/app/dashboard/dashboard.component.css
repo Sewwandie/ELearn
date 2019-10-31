@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    padding: 5px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    height: 70px;
+    color: rgb(131, 9, 245);
+    background-image: url(src\assets\Images\Home\elearningHeader.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+
+#userImage{
+    background-image: url(src\assets\Images\Home\userimg.png);
+    width: 350px;
+    height:auto;
+}
+
+#userDetail{
+    font-size: 18px;    
+    text-align: center;
+}
+
+nav{
+    float: left;
+    padding: 5px;
+    width: 25%;
+    height:600px;
+    background-image: url(src\assets\Images\Home\navigationimage.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+article{
+    background-image: linear-gradient(to right,#2980B9,#6DD5FA,#FFFFFF);
+    float: left;
+    width: 75%;
+    height: 600px;
+    padding: 25px;
+}
+
+#content{
+    padding: 25px;
+    background-image: linear-gradient(to right,#8E2DE2,#4A00E0);
+    border-radius: 10px;
+    box-shadow: 10px,10px,black;
+    display:block;
+}
+
+article h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+#header1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+#header2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.btn-group button {
+    background-image: linear-gradient( to right,#f12711,#f5af19);
+    color: white; /* White text */
+    font-size: 20px;
+    padding: 15px; /* Some padding */
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 10px,10px,black;
+    cursor: pointer;
+    display: block;
+    
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-position: bottom;;
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
