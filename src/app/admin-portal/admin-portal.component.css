@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    padding: 5px;
+    text-align: center;
+    font-size: 35px;
+    height: 70px;
+    color: rgb(131, 9, 245);
+    background-image: url(src\assets\Images\Home\elearningHeader.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+
+#userImage{
+    background-image: url(src\assets\Images\Home\userimg.png);
+    width: 350px;
+    height:auto;
+}
+
+nav{
+    float: left;
+    padding: 5px;
+    width: 25%;
+    height:100%;
+    background-image: url(src\assets\Images\Home\navigationimage.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+article{
+    background-image: linear-gradient(to right,#2980B9,#6DD5FA,#FFFFFF);
+    float: left;
+    width: 70%;
+    height: 550px;
+    padding: 25px;
+}
+
+#content{
+    background-image: linear-gradient(to right,#8E2DE2,#4A00E0);
+}
+
+article h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+#header1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+#header2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 2px solid green; /* Green border */
+    color: white; /* White text */
+    font-size: 20px;
+    border-spacing: 10px;
+    padding: 25px; /* Some padding */
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    box-shadow: lawngreen;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-position: bottom;;
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
