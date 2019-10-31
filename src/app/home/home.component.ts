@@ -3,6 +3,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 import {AuthenticationService} from '../services';
+import { User } from '../models';
+import { getSyntheticPropertyName } from '@angular/compiler/src/render3/util';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +21,7 @@ export class HomeComponent implements OnInit {
     error:string;
     success:string;
     loged:boolean;
+    currentUser:User;
 
 
   constructor(
@@ -65,16 +68,29 @@ export class HomeComponent implements OnInit {
               .pipe(first())
               .subscribe(
                   data => {
-                      this.router.navigate(['/index']);
+                      this.hekk();
                   },
                   error => {
                       this.error = error.error.message;
                       this.loading = false;
                   });    
       }
+
+      hekk=function() {
+        this.currentUser=this.authenticationService.currentUserValue
+        if(this.currentUser.type=='Student'||this.this.currentUser.type=='Moderator'){
+          this.router.navigateByUrl('dash');
+        }
+        if(this.currentUser.type=='Admin'){
+          this.router.navigateByUrl('Adash');
+        }
+        
+      }
     
-
-
+      btnClick1= function (){
+        this.router.navigateByUrl('Register');
+      }
+      
 
 
 

@@ -10,12 +10,16 @@ import { RegistrationComponent } from './registration/registration.component';
 import { UserService, AuthenticationService, AuthGuardService } from './services';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard';
+import { AdminPortalComponent } from './admin-portal';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    DashboardComponent,
+    AdminPortalComponent
 
   ],
   imports: [
